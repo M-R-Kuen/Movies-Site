@@ -1,0 +1,413 @@
+/* Reset CSS */
+
+/* Box-sizing reset */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Margin and padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography reset */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* List styling reset */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Resetting links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default styling for form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Optionally add more reset rules as needed */
+
+@font-face {
+  font-family: "Margaret";
+  src: url(/front/assets/fonts/Margaret.ttf) format("truetype");
+  font-style: normal;
+}
+
+body {
+  background-color: #f5f7f7;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  font-family: "bebas neue";
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 15px;
+}
+
+.imgprofile {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 80vh; /* Altura del 50% de la ventana visible */
+  object-fit: cover; /* Escala la imagen para cubrir el contenedor */
+}
+
+.overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 20px auto; /* Margen automático para centrar */
+  background: rgba(88, 88, 88, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(88, 88, 88, 0.3);
+}
+
+.overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  font-family: "Margaret";
+  color: white;
+}
+
+.hero {
+  background-color: white;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  font-family: "bebas neue";
+  font-size: 2em;
+  color: black;
+}
+
+.content {
+  margin: auto;
+  text-align: left;
+}
+
+.content-white {
+  background-image: url(/front/assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  color: white;
+}
+
+article p {
+  font-size: 1.2em;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 30px 0px 30px;
+  color: white;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+
+  width: 90%;
+  border-radius: 9px;
+  box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.carousel-images {
+  display: flex;
+
+  overflow: hidden;
+  border-radius: 11px;
+}
+
+.carousel-image {
+  transition: all 0.9s;
+  width: 50%;
+  height: auto;
+  transform: translateX(0);
+}
+
+.btn-left,
+.btn-right {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: black;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.25s;
+  z-index: 1;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  opacity: 1;
+}
+
+.btn-left {
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+}
+.btn-right {
+  top: 50%;
+  right: -1.5rem;
+  transform: translateY(-50%);
+}
+
+.fa-solid {
+  font-size: 2rem;
+  color: white;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px 30px 30px 30px;
+  text-align: left;
+  color: white;
+}
+
+/* Media Queries para Ajustes en Pantallas más Grandes */
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    font-family: "bebas neue";
+    font-size: 2em;
+  }
+
+  .navbar li {
+    margin: 0 20px;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between; /* Para espaciar los elementos */
+    align-items: center; /* Para alinear verticalmente */
+    background-size: cover;
+  }
+
+  .imgprofile {
+    height: auto;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    margin-left: -700px;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border-radius: 9px;
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .carousel-images {
+    display: flex;
+    overflow: hidden;
+    border-radius: 11px;
+  }
+
+  .carousel-image {
+    transition: all 0.9s;
+    width: 400px;
+    transform: translateX(0);
+  }
+
+  .btn-left,
+  .btn-right {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.25s;
+    z-index: 1;
+  }
+
+  .btn-left:hover,
+  .btn-right:hover {
+    opacity: 1;
+  }
+
+  .btn-left {
+    top: 50%;
+    left: -1.5rem;
+    transform: translateY(-50%);
+  }
+  .btn-right {
+    top: 50%;
+    right: -1.5rem;
+    transform: translateY(-50%);
+  }
+
+  .fa-solid {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .content-white {
+    background-image: url(/front/assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 990px) {
+  .overlay {
+    position: absolute;
+    top: 35%; /* Centrado vertical */
+    left: 20%; /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    width: 30%; /* Ancho del overlay en pantallas grandes */
+    max-width: 500px; /* Ancho máximo del overlay */
+    background-color: transparent;
+  }
+  .overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    font-family: "Margaret";
+    color: white;
+  }
+}
+
+@media (min-width: 1480px) {
+  .overlay {
+    position: absolute;
+    top: 60%; /* Centrado vertical */
+    left: 20%; /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    width: 40%; /* Ancho del overlay en pantallas grandes */
+    max-width: 500px; /* Ancho máximo del overlay */
+    background-color: transparent;
+  }
+  .overlay h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: "Margaret";
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Ocultar todos los elementos li excepto el primero que contiene el enlace "Home" */
+  .navbar {
+    justify-content: flex-start;
+    border: none;
+    background-color: rgba(247, 247, 247, 0.1);
+  }
+  .navbar ul li:not(:first-child) {
+    display: none;
+  }
+  .navbar ul li:first-child {
+    margin-left: 20px; /* Ajustar margen izquierdo para alinear a la izquierda */
+    margin-right: auto;
+  }
+  .hero {
+    display: none;
+  }
+}

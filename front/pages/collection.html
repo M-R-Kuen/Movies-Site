@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/21dd9f30ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-+2FZd9YbAdAMwzA03a9LRB7bQj8kSYkZ6/PHLw9p/DJ5CEKQ3UIr9T5alWz2ilw5"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/front/styles/collection.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/front/pages/index.html">Home</a></li>
+          <li><a href="/front/pages/about.html">About</a></li>
+          <li><a href="/front/pages/collection.html">Collection</a></li>
+          <li><a href="/front/pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="content content-white">
+        <div class="title">
+          <h2 class="subtitle">COLLECTION</h2>
+        </div>
+
+        <div class="intro">
+          <p>Our movies collection is made for you</p>
+        </div>
+        <div class="search-container">
+          <input
+            id="movieTitle"
+            type="text"
+            placeholder="Search..."
+            class="search-input"
+          />
+          <button id="searchMovie" type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="content content-black">
+        <div id="cardContenedor" class="card-contenedor"></div>
+      </div>
+    </main>
+    <footer>
+      <audio controls autoplay loop>
+        <source
+          src="/front/assets/Universal Centennial Logo.mp3"
+          type="audio/mpeg"
+        />
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
+      <p>&copy; 2024 MyWebsite.com</p>
+    </footer>
+    <!-- <script src="/scripts/tempData.js"></script> -->
+    <script src="/front/scripts/collection.js"></script>
+  </body>
+</html>
